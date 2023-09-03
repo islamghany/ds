@@ -1,0 +1,19 @@
+{
+  "origin": "http:localhost:8000",
+  "rules": [
+    {
+      "path": "/accounts/login",
+      "rate_limit": {
+        "unit": "minute",
+        "request_per_unit": 5
+      }
+    },
+    {
+      "path": "",
+      "rate_limit": {
+        "unit": "minute",
+        "request_per_unit": 15
+      }
+    }
+  ]
+}
